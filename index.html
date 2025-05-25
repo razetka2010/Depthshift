@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сдвиг Глубины | Официальный сайт игры</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Переключатель измерений -->
+    <div class="dimension-switcher">
+        <div class="toggle"></div>
+    </div>
+    
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">СДВИГ<br>ГЛУБИНЫ</div>
+            <nav class="nav">
+                <a href="#about" class="nav-link">Об игре</a>
+                <a href="#features" class="nav-link">Особенности</a>
+                <a href="#trailer" class="nav-link">Трейлер</a>
+                <a href="#" class="nav-link" id="presentation-link">Презентация</a>
+                <a href="#download" class="nav-link">Скачать</a>
+            </nav>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main>
+        <!-- Герой-секция -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">ИЗМЕНИ СВОЁ<br>ИЗМЕРЕНИЕ</h1>
+                <p class="hero-subtitle">Инновационная игра, где реальность меняет свои границы</p>
+                <div class="hero-buttons">
+                    <a href="#trailer" class="btn btn-primary">Смотреть трейлер</a>
+                    <a href="#download" class="btn btn-secondary">Скачать игру</a>
+                </div>
+            </div>
+            <div class="hero-character"></div>
+        </section>
+
+        <!-- О игре -->
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="section-header">
+                    <h2>ОБ ИГРЕ</h2>
+                    <p>Уникальный игровой опыт между измерениями</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>"Сдвиг Глубины" - это революционная игра, где вам предстоит переключаться между 2D и 3D измерениями, чтобы решать головоломки и преодолевать препятствия.</p>
+                        <p>То, что невозможно в одном измерении, становится возможным в другом. Исследуйте удивительный мир, где законы физики работают по-разному в зависимости от вашей перспективы.</p>
+                        <div class="dimension-btns">
+                            <button class="dimension-btn active" data-dimension="2d">2D мир</button>
+                            <button class="dimension-btn" data-dimension="3d">3D мир</button>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="dimension-view">
+                            <div class="dimension-view-2d active"></div>
+                            <div class="dimension-view-3d"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Особенности -->
+        <section id="features" class="section features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>ОСОБЕННОСТИ</h2>
+                    <p>Что делает игру уникальной</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">⇄</div>
+                        <h3>Смена измерений</h3>
+                        <p>Мгновенно переключайтесь между 2D и 3D перспективой одним нажатием кнопки</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🧩</div>
+                        <h3>Головоломки</h3>
+                        <p>Решайте сложные задачи, используя особенности каждого измерения</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌌</div>
+                        <h3>Два мира</h3>
+                        <p>Исследуйте красивые и стилистически разные измерения</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎮</div>
+                        <h3>Геймплей</h3>
+                        <p>Полностью новый игровой опыт, который вы еще не пробовали</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Трейлер -->
+        <section id="trailer" class="section trailer">
+            <div class="container">
+                <div class="section-header">
+                    <h2>ТРЕЙЛЕР</h2>
+                    <p>Увидьте игру в действии</p>
+                </div>
+                <div class="video-container">
+                    <video controls poster="Снимок экрана 2025-05-23 010707.png" class="trailer-video">
+                        <source src="101386729_free.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает видео тег.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- Скачать -->
+        <section id="download" class="section download">
+            <div class="container">
+                <div class="section-header">
+                    <h2>СКАЧАТЬ ИГРУ</h2>
+                    <p>Доступна только для PC (Windows)</p>
+                </div>
+                <div class="download-options">
+                    <div class="download-card">
+                        <div class="download-icon">💻</div>
+                        <h3>Версия 1.0</h3>
+                        <p>Полная версия игры</p>
+                        <ul class="features-list">
+                            <li>Все уровни доступны</li>
+                            <li>Поддержка геймпада</li>
+                            <li>Оптимизированная графика</li>
+                        </ul>
+                        <a href="https://drive.google.com/file/d/1Cm7JHIdzGKOt00PZk650SvNlsiOelAlz/view?usp=sharing" class="btn btn-download" download>
+                            Скачать
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">СДВИГ ГЛУБИНЫ</div>
+            <div class="footer-links">
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Условия использования</a>
+                <a href="#">Поддержка</a>
+            </div>
+        </div>
+        <div class="footer-copy">© 2025 Dimension Shift Studios. Все права защищены.</div>
+    </footer>
+
+    <!-- Модальное окно презентации -->
+<div id="presentation-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h3 class="presentation-title">ПРЕЗЕНТАЦИЯ</h3>
+        
+        <!-- Встроенный PDF-просмотрщик -->
+        <div class="pdf-viewer">
+            <embed id="pdf-embed" type="application/pdf" width="100%" height="500px">
+        </div>
+        
+        <div class="pdf-controls">
+            <button class="prev-page">‹ Назад</button>
+            <span class="page-counter">Страница 1</span>
+            <button class="next-page">Вперед ›</button>
+        </div>
+
+    <!-- Подключение скриптов -->
+    <script src="script.js"></script>
+</body>
+</html>
